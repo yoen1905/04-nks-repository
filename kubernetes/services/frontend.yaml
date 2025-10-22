@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: "frontend"
+  annotations :
+    service.beta.kubernetes.io/ncloud-load-balancer-layer-type: "nlb"
+spec:
+  selector:
+    app: "frontend"
+  ports:
+    - protocol: "TCP"
+      port: 443
+      targetPort: 443
+  type: LoadBalancer
