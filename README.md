@@ -1,4 +1,3 @@
-nnn
 # Orchestrating the Cloud with Kuberenetes
 
 In this Codelab you will learn how to:
